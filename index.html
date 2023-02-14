@@ -1,0 +1,78 @@
+<doctype html>
+    <html>
+        <head>
+            <title>
+                Scrolltrigger parallax header effects</title>
+                <link rel="stylesheet" type="text/css" href="style.css"> 
+        </head>
+         <body>
+            <section>
+               <img src="img/bg.jpg" id="bg">
+               <h2 id="text">Mountains</h2>
+                <img src="img/man.png" id="man">
+                 <img src="img/clouds_1.png" id="clouds_1">
+                  <img src="img/clouds_2.png" id="clouds_2">
+                   <img src="img/mountain_left.png" id="mountain_left">
+                    <img src="img/mountain_right.png" id="mountain_right">
+                   </section>
+                   <div class="sec">
+                    <h2>ScrollTigger is Awesome</h2>
+                    <p>Lorem ipsum dolor sit amet. Est fuga debitis et tenetur voluptatibus sit ipsam voluptate non consectetur vitae et autem consectetur sed odit consequuntur. Aut culpa sapiente ut sapiente explicabo in sunt eaque et explicabo repellendus et voluptatem quia aut repudiandae tenetur qui dolores facere. A natus voluptas id impedit molestiae et molestiae velit qui exercitationem quod ea ullam ducimus. Sit laudantium consequatur sit suscipit illum sit obcaecati neque hic praesentium cupiditate ut fugit reiciendis.
+
+                        Ut nobis veniam ea amet ipsa in ipsam dolore ut beatae iusto aut illum omnis vel voluptas labore. Quo recusandae debitis ut Quis placeat qui dolor atque et placeat libero eum asperiores repudiandae qui accusamus porro. Est obcaecati fugit est consectetur maiores ea dolore quas est ratione dolorum ad esse animi qui facere assumenda.
+                        
+                        Et consequatur blanditiis et nobis quas est temporibus nihil. Non reiciendis voluptatem eos nihil quisquam qui harum sequi ut minima officia. Qui earum laborum qui voluptate architecto ut dolorem dolores vel voluptatem ratione et repellat voluptatibus qui provident amet qui delectus incidunt. Nam inventore libero et tempore amet est temporibus eveniet ad delectus commodi hic suscipit voluptatibus hic corporis velit.</p>
+                   </div>
+                   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+                   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+                    <script>
+                        gsap.to("#bg", {
+                              scrollTrigger :  {
+                                scrub : 1
+                              },
+                              scale : 1.5
+                              });
+
+                              gsap.to("#man", {
+                              scrollTrigger :  {
+                                scrub : 1
+                              },
+                              scale : 1.5
+                              });
+
+                              gsap.to("#mountain_left", {
+                              scrollTrigger :  {
+                                scrub : 1
+                              },
+                              x : -500,
+                              });
+
+                              gsap.to("#mountain_right", {
+                              scrollTrigger :  {
+                                scrub : 1
+                              },
+                              x : 500,
+                              });
+
+                              gsap.to("#clouds_1", {
+                              scrollTrigger :  {
+                                scrub : 1
+                              },
+                              x : 200,
+                              });
+                              gsap.to("#clouds_2", {
+                              scrollTrigger :  {
+                                scrub : 1
+                              },
+                              x : -200,
+                              });
+                              gsap.to("#text", {
+                              scrollTrigger :  {
+                                scrub : 1
+                              },
+                              y : 500,
+                              });
+                    </script>
+        
+                </body>
+    </html>
